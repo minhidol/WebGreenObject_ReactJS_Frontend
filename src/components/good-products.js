@@ -60,7 +60,7 @@ class Products extends Component{
         return(
             <div className="container" style={{paddingBottom:'50px'}}>
                 <div className="title">
-                    <h2 style={{color:"#333", fontSize: "32px"}}>Danh mục luôn đồ ngu</h2>
+                    <h2 style={{color:"#333", fontSize: "32px"}}>Sản phẩm được quan tâm</h2>
                 </div>
                 <Row style={{marginTop:"10px"}}>
                     {theBest.map(product =>(
