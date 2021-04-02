@@ -9,6 +9,10 @@ import News from '../components/news';
 
 class home extends Component{
     
+    componentDidMount(){
+        console.log("home didmout");
+    }
+
     render(){
         return(
             <div id='home'>

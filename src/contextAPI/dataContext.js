@@ -49,6 +49,7 @@ export class DataProvider extends Component{
     }
 
     componentDidMount(){
+        console.log("context api");
         axios.get('https://greenobjectdjangobackend.herokuapp.com/api/list_product/')
         .then(data=>{
             this.setState({

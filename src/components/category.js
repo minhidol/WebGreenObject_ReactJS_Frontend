@@ -16,6 +16,10 @@ const margin={
 };
 class Category extends Component{
     
+    componentDidMount(){
+        console.log("Category did mount");
+    }
+
     render(){
         return(
             <div className="container">

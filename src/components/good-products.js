@@ -48,7 +48,7 @@ class Products extends Component{
     }
 
     componentDidMount(){
-        
+        console.log("Products did mount");
     }                                                                               
 
     static contextType = DataContext

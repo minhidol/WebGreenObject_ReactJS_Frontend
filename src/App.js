@@ -29,8 +29,9 @@ class App extends Component {
   }
 
   componentDidMount(){
-
+    console.log("app DId mount");
   }
+  
   render() {
     
     return(
