@@ -50,7 +50,7 @@ class Products extends Component{
     componentDidMount(){
         console.log("Products did mount");
     }                                                                               
-
+    
     static contextType = DataContext
 
     render(){
@@ -70,7 +70,7 @@ class Products extends Component{
                                         top 
                                         width="100%" 
                                         height="220px"
-                                        src={'https://greenobjectdjangobackend.herokuapp.com/media/'+product.img}
+                                        src={'https://greenobjectdjangobackend.herokuapp.com/media/178460297_2815895708664488_3058004091806891081_n.jpg'}
                                         alt="error" />
                                     <CardBody>
                                     <Link to={`/${product.id}`} className ="card-title" tag="h5" style={card_body}>{product.name}</Link>

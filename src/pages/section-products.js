@@ -72,9 +72,7 @@ class SectionProducts extends Component {
         const itemsOrderPrice = JSON.parse(localStorage.getItem('itemsOrderPrice'));
         const itemsOrderTime = JSON.parse(localStorage.getItem('itemsOrderTime'));
         const { resultItems } = this.context;
-        // const itemsOrderStar = data;
-        // const itemsOrderPrice = data;
-        // const itemsOrderTime = data;
+        
 
         if (section == "Tất cả" && type == "price")
         {

@@ -31,7 +31,7 @@ class App extends Component {
   componentDidMount(){
     console.log("app DId mount");
   }
-  
+
   render() {
     
     return(
@@ -40,28 +40,27 @@ class App extends Component {
         <Router>
             <div className='App'>
               <Navbar/>
-              <Switch>
-                <Route path='/' exact component={Home} exact/>
-                <Route path='/results' exact>
-                  <SearchItems/>
-                </Route>
-                <Route path='/category/:section' exact component={SectionProducts}/>
-                <Route path='/register' exact>
-                  <Register/>
-                </Route>
-                <Route path='/login' exact component={Login} exact/>
-                <Route path='/cart' exact component={_Cart} exact/>
-                <Route path='/payment' exact>
-                  <Payment/>
-                </Route>
+                
+                  <Route path='/' exact component={Home} exact/>
+                  <Route path='/results' exact>
+                    <SearchItems/>
+                  </Route>
+                  <Route path='/category/:section' exact component={SectionProducts}/>
+                  <Route path='/register' exact>
+                    <Register/>
+                  </Route>
+                  <Route path='/login' exact component={Login} exact/>
+                  <Route path='/cart' exact component={_Cart} exact/>
+                  <Route path='/payment' exact>
+                    <Payment/>
+                  </Route>
+                  <Route path='/admin' exact component={Admin} exact/>
+                  <Route path='/manage_product' exact component={ManageProduct} exact/>
+                  <Route path='/manage_bill' exact component={ManageBill} exact/>
 
-                <Route path='/admin' exact component={Admin} exact/>
-                <Route path='/manage_product' exact component={ManageProduct} exact/>
-                <Route path='/manage_bill' exact component={ManageBill} exact/>
-
-                <Route path='/:id' exact component={DetailProduct} exact/>
-                <Route path='/bill/:id' exact component={DetailBill} exact/>
-                </Switch> 
+                  <Route path='/:id' exact component={DetailProduct} exact/>
+                  <Route path='/bill/:id' exact component={DetailBill} exact/>
+                  
               <Footer/>
             </div>
         </Router>
